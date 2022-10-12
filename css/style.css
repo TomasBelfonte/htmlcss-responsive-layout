@@ -3,12 +3,14 @@
         --second_color: #ABDDFC;
         --third_color: #9690DD;
         --fourth_color: #363636;
+        --fifth_color: white;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -16,15 +18,19 @@ nav {
     display: flex;
 }
 
+
 .header-container {
     min-height: 30px;
     border-bottom: 1 px solid black;
     display: flex;
     justify-content: space-between;
-    min-height: 50px;
+    align-items: center;
     padding: 10px;
 }
 
+.logo-header {
+    margin-left: 30px;
+}
 .menu-header ul{
     display: flex;
     display: none;
@@ -53,8 +59,9 @@ section {
     padding: 10px 0;
 }
 
+
 .row-container {
-    display: flex;
+
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,26 +69,297 @@ section {
     margin: 30px 0;
 }
 
-.row {
-    border: 5px solid;
+.applications .card-logo img {
+    width: 400px;
 }
 
-.applications {
+
+.card {
+    text-align: center;
+    padding: 20px 15px;
     background-color: var(--second_color);
+    margin: 0 30px;
+    border-radius: 25px;
+    margin: 20px;
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+
+.row-white {
+    text-align: center;
+    padding: 20px 30px;
+    margin: 0 30px;
+    border-radius: 25px;
+    background-color: var(--fifth_color);
+}
+
+.row-pink {
+    text-align: center;
+    margin: 0 30px;
+    border-radius: 25px;
+    background-color: var(--third_color);
+}
+
+.card-text {
+    color: var(--first_color);
+}
+
+
+.card-text h1 {
+    font-size: 35px;
+    color: var(--first_color);
+    margin: 20px 0;
+}
+
+.planning .row-text-black h1 {
+    font-size: 30px;
+    color: black;
+    margin: 40px 0px;
+}
+
+.paragraph {
+    padding: 0 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.planning .paragraph-black p {
+    padding: 0 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.paragraph-black {
+    margin-bottom: 60px;
+}
+
+.row-white i {
+    font-size: 24px;
+    border-radius: 50%;
+    height: 71px;
+    aspect-ratio: 1/1;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: var(--third_color);
+    padding-top: 21px;
+}
+
+.row-simbol i{
+    color: var(--first_color);
+    font-size: 100px;
+    padding: 32px 0px;
+}
+.row-container button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: var(--first_color);
+    color: white;
+    font-size: 20px;
+
 }
 
 .planning {
     background-color: var(--third_color);
 }
 
+
+.planning h1 {
+    color: white;
+    padding-top: 30px;
+}
+
+.planning p {
+    color: white;
+
+}
+
+.planning img {
+    width: 400px;
+}
+
+.testimonials .row {
+    text-align: center;
+    padding: 20px 15px;
+    background-color: var(--third_color);
+    margin: 0 30px;
+    border-radius: 25px;
+    padding: 40px 95px;
+}
+
+.testimonials img {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 250px;
+    object-fit: cover;
+
+}
+
+.testimonials h3 {
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    color: var(--third_color);
+    font-size: 35px;
+}
+
+.testimonials p {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 20px;
+}
+.testimonials .row-text p {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0px;
+    color: white;
+}
+
 .working {
     background-color: var(--third_color);
 }
 
+.working button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 60px;
+    border-radius: 25px;
+    background-color: var(--third_color);
+    color: white;
+    font-size: 20px;
+}
+
+.left {
+    text-align: left;
+}
+.working h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding: 80px 0;
+}
+.working .row {
+    background-color: white;
+}
+.working .row-logo {
+    font-size: 50px;
+    text-align: left;
+    color: var(--third_color);
+}
+
+.working .row-text {
+    text-align: left;
+    font-size: 20px;
+    color: var(--third_color);
+    padding: 30px 0;
+}
+
+.working p {
+    text-align: left;
+    font-size: 18px
+}
+
+.working button {
+    background-color: ;
+}
+
+.row-working {
+    padding: 20px 15px;
+    background-color: var(--second_color);
+    margin: 0 30px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.row-about {
+
+    padding: 20px 15px;
+    margin: 0 30px;
+    border-radius: 25px;
+}
+
+.row-about h2 {
+    color: var(--third_color);
+    font-size: 35px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.row-about p {
+    text-align: left;
+    font-size: 18px;
+}
+
+.about .row-logo img{
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.about .row-text {
+    color: black;
+}
+
+.about button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: var(--third_color);
+    color: white;
+    font-size: 20px;
+}
 .get_started {
     background-color: var(--third_color);
 }
 
+.row-get {
+    text-align: center;
+    padding: 20px 15px;
+    margin: 0 30px;
+    border-radius: 25px;
+}
+
+.row-get .row-text {
+    color: white;
+}
+
+.row-get h1 {
+    color: #FFBE6E;
+    margin: 40px 0;
+    font-size: 80px;
+}
+
+.row-get button {
+    background-color: white;
+    color: var(--third_color);
+    padding: 22px 100px;
+    border-radius: 50px;    
+}
+
+.row-get h2 {
+    margin: 20px;
+    font-size: 40px;
+}
 .footer {
     background-color: var(--fourth_color);
+}
+
+.row-foot {
+    text-align: center;
+    padding: 20px 15px;
+    background-color: var(--fourth_color);
+    margin: 0 30px;
+    border-radius: 25px;
+}
+
+.footer .row-text {
+    color: white;
 }
